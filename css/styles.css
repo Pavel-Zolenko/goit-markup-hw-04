@@ -115,6 +115,7 @@ color: var(--accent-color);
 .auth-nav {
     display: flex;
     margin-left: auto;
+    align-items: baseline;
     
 }
 .auth-nav .link {
@@ -127,13 +128,19 @@ color: var(--accent-color);
     
 }
 .contacts {
-    color: var(--primary-txt-cl)
+    color: var(--primary-txt-cl);
+    
+    
     
 }
 .contacts:hover,
 .contacts:focus {
     color: var(--accent-color);
 }
+.contacts svg {
+    fill: currentColor;
+}
+
 /* section hero */
 .hero {
     background-color: var(--primary-bg-cl);
@@ -211,7 +218,21 @@ color: var(--accent-color);
 .Benefits li:not(:last-child) {
 margin-right: 30px;
 }
+.benefits-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+   
+   
+    background-color: var(--secondary-bg-cl);
+    
 
+    margin-bottom: 30px;
+    
+
+}
 
 /* section чем мы занимаемся */
 .work .section {
@@ -283,12 +304,13 @@ padding-bottom: 94px;
 }
 
 .socials {
-        display: flex;
-            align-items: center;
+    display: flex;
+    
+}
+ 
             
             
     
-}
 
 
 
