@@ -128,11 +128,12 @@ color: var(--accent-color);
     
 }
 .contacts {
-    color: var(--primary-txt-cl);
-    
-    
-    
+    color: var(--primary-txt-cl);   
 }
+.icon-auth-nav {
+    margin-right: 10px;
+}
+
 .contacts:hover,
 .contacts:focus {
     color: var(--accent-color);
@@ -224,29 +225,26 @@ margin-right: 30px;
     justify-content: center;
     width: 270px;
     height: 120px;
-   
-   
     background-color: var(--secondary-bg-cl);
-    
-
     margin-bottom: 30px;
     
 
 }
 
 /* section чем мы занимаемся */
-.work .section {
-padding-bottom: 94px;
+.work-section {
+    padding-bottom:  94px;
 }
+
 .work-title,
-.team-title {
+.team-title,
+.clients-title {
     color: var(--title-txt-cl);
     font-size: 36px;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-align: center;
     
-  
 }
 .work-list {
     display: flex;
@@ -263,9 +261,8 @@ padding-bottom: 94px;
    .team {
     background-color: var(--secondary-bg-cl);
    }
-   .team-container{
-    flex-direction: column;
-   }
+   
+   
    .team-title {
     margin-bottom: 50px;
    }
@@ -305,14 +302,69 @@ padding-bottom: 94px;
 
 .socials {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 16px;
     
-}
  
-            
-            
-    
+}
+.socials svg {
+    fill: #AFB1B8;        
+}
+.socials-link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.socials-link:hover,
+.socials-link:focus {
+ background-color: var(--accent-color);
+}
+.socials-link:hover .social-icons {
+    fill: var(--white-cl);
+}
+.socials-link:focus .social-icons {
+    fill: var(--white-cl);
+}
 
+    /* Клиенты */
+.clients-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
 
+.clients-item {
+width: 170px;
+height: 92px;
+border: 1px solid #AFB1B8;
+border-radius: 4px;
+
+    }
+.clients-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.clients-item:not(:last-child) {
+    margin-right: 30px;
+} 
+.clients-item:hover,
+.clients-item:focus {
+    border-color: var(--accent-color);
+}
+.clients-item:hover .clients-icon {
+    fill: var(--accent-color);
+}
+
+.clients-item svg {
+    fill: #AFB1B8;
+}
 
 /* footer */
 .footer {
@@ -321,7 +373,9 @@ padding-bottom: 94px;
     padding-bottom: 60px;
 }
 .footer-container {
-    flex-direction: column;
+    display: flex;
+    gap: 70px;
+    align-items: baseline;
 }
 .logo-footer {
     color: var(--white-cl);
@@ -364,7 +418,21 @@ padding-bottom: 94px;
  address li +.item {
     margin-top: 9px;
  }
-   
+.right-title {
+ font-size: 14px;
+ line-height: calc(16 / 14);
+ letter-spacing: 0.03em;
+ text-transform: uppercase;
+ color: #FFFFFF;
+ margin-bottom: 20px;
+}
+.socials-footer {
+    background-color:rgba(255, 255, 255, 0.1);
+}
+.right .socials-link  svg {
+fill: white;
+}
+
 /* ----- portfolio page----------*/
 
 /* ------button list---- */
